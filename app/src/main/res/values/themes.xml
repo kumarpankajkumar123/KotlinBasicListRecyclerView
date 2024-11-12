@@ -12,9 +12,12 @@
         <item name="colorOnBackground">@color/light_textcolor</item>
         <item name="color">@color/light_login</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+
 
         <item name="android:drawable">@drawable/subtract</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:navigationBarColor">#F63636</item>
     </style>
 </resources>
