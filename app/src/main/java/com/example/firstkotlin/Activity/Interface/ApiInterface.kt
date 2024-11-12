@@ -1,13 +1,13 @@
 package com.example.firstkotlin.Activity.Interface
 
-import okhttp3.Response
+
+import com.example.firstkotlin.Activity.Modals.ResponseData
+import retrofit2.Call
+
 import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET("posts")
-    suspend fun getData():Response
-
-
-
+    @GET("/posts")
+    fun getData(): Call<ArrayList<ResponseData>>
 }
