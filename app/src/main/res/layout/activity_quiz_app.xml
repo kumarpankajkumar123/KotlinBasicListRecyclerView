@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.activity.QuizApp"
+    android:background="#B3004643">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="23dp"
+           android:layout_marginTop="100dp"
+           android:text="Enter your name"
+           android:textColor="#EEE"
+           android:textSize="18sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+       <EditText
+           android:id="@+id/editname"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="23dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="23dp"
+           android:background="@drawable/rectangle_10"
+           android:hint="enter name"
+           android:autoHandwritingEnabled="true"
+           android:inputType="text"
+           android:paddingStart="10dp"
+           android:textColor="#ffffff"
+           android:textColorHint="#ffffff"
+           android:textSize="20sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+       <TextView
+           android:id="@+id/startbtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/rectangle_6__2_"
+           android:gravity="center"
+           android:layout_marginTop="100dp"
+           android:text="Start"
+           android:textAlignment="center"
+           android:textColor="#ffffff"
+           android:textSize="24sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/editname" />
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/profile_image"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           android:layout_marginTop="100dp"
+           android:src="@drawable/circle_background"
+           app:civ_border_color="#FF000000"
+           app:civ_border_width="2dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ImageView
+           android:id="@+id/uploadImage"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/baseline_camera_alt_24"
+           app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+           app:layout_constraintEnd_toEndOf="@+id/profile_image" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

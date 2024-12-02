@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -17,27 +18,51 @@
         android:theme="@style/Theme.FirstKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.LearRetrofit"
-            android:exported="true" >
-
+            android:name=".Activity.activity.Results"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.activity.SplashScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".Activity.RecyclerKnow"
+            android:name=".Activity.activity.GetResponseQuizeActivity"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
         <activity
-            android:name=".Activity.ListviewKnow"
+            android:name=".Activity.activity.QuizMainScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.activity.QuizApp"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity.activity.MyViewModelDemo"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity.activity.LearRetrofit"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.activity.RecyclerKnow"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activity.activity.ListviewKnow"
             android:exported="true">
 
             <!-- <intent-filter> -->
@@ -46,7 +71,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".Activity.DemoConcept"
+            android:name=".Activity.activity.DemoConcept"
             android:exported="true">
 
             <!-- <intent-filter> -->

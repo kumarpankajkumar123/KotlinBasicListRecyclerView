@@ -1,14 +1,12 @@
-package com.example.firstkotlin.Activity
+package com.example.firstkotlin.Activity.activity
 
 import android.os.Build
 import android.os.Bundle
-import android.view.Window
 import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.helper.widget.Carousel.Adapter
 import com.example.firstkotlin.R
 import com.example.firstkotlin.databinding.ActivitySplashScreenBinding
 
